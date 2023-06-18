@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Generate QR Code</title>
+  </head>
+  <body>
+    <main>
+      <h1>Text Encryption</h1>
+      <form id="encrypt-form">
+        <label for="text">Text:</label>
+        <textarea id="text" name="text" required></textarea><br />
+
+        <label for="shift">Shift:</label>
+        <input type="number" id="shift" name="shift" required /><br />
+
+        <label for="direction">Direction:</label>
+        <select id="direction" name="direction" required>
+          <option value="forward">Forwards</option>
+          <option value="backward">Backwards</option></select
+        ><br />
+
+        <button type="submit">Encrypt Text</button>
+      </form>
+
+      <label for="result">Encrypted Text:</label>
+      <output id="result" name="result"></output>
+
+      <p>
+        <mark>This website allows you to encrypt your text using a <a href="https://en.wikipedia.org/wiki/Caesar_cipher">shift cipher</a>, also known as a Caesar's code or cipher.</mark>
+        Enter the text you want to encrypt, choose the shift amount, and select the direction of encryption (forwards or backwards).
+        Once you submit the form, the encrypted text will be displayed below. You can use this tool to have fun with encoding and decoding secret messages. <br/><strong>DON'T USE THIS TO ENCRYPT PERSONAL DATA OR INFORMATION, AS IT IS VERY EASY TO BREAK A CAESAR CIPHER, EVEN IF YOU CHANGE THE SHIFT TO A DIFFERENT NUMBER. USING A MORE MODERN FORM OF ENCRYPTION WOULD BE BETTER.</strong>
+      </p>
+      <script src="script.js"></script>
+    </main>
+    <footer><a href="https://walker84837.github.io/">Main page</a></footer>
+  </body>
+</html>
